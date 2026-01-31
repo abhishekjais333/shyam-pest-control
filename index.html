@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shyam Pest Control | Pest Control Services</title>
+  <meta name="description" content="Shyam Pest Control offers safe and reliable pest control services. Book a visit and get WhatsApp confirmation.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Shyam Pest Control</h1>
+  <p>Safe • Reliable • Affordable Pest Control</p>
+  <button onclick="openPopup()">Book a Visit</button>
+</header>
+
+<section class="services">
+  <h2>Pest Control Services</h2>
+  <div class="service-grid">
+    <div class="card">Termite Control</div>
+    <div class="card">Cockroach Control</div>
+    <div class="card">Mosquito Control</div>
+    <div class="card">Rodent Control</div>
+  </div>
+</section>
+
+<section class="why">
+  <h2>Why Choose Shyam Pest Control?</h2>
+  <ul>
+    <li>✔ Trained Professionals</li>
+    <li>✔ Safe Chemicals</li>
+    <li>✔ Affordable Pricing</li>
+    <li>✔ Quick Service</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Shyam Pest Control</p>
+</footer>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h3>Book a Visit</h3>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="tel" id="mobile" placeholder="Mobile Number">
+    <input type="datetime-local" id="datetime">
+    <input type="text" id="location" placeholder="Paste Google Maps Location Link">
+
+    <button onclick="sendWhatsApp()">Submit</button>
+    <button class="close" onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
