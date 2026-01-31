@@ -84,3 +84,28 @@ footer {
 .close {
   background: gray;
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.trust {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.popup-box select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}

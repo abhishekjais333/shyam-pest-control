@@ -1,9 +1,10 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shyam Pest Control | Pest Control Services</title>
+  <title>Shyam Pest Control | Pest Control Services in Mumbai</title>
+
   <meta name="description" content="Shyam Pest Control offers safe and reliable pest control services. Book a visit and get WhatsApp confirmation.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -37,6 +38,12 @@
   </ul>
 </section>
 
+
+<section class="trust">
+  <h2>Trusted Pest Control Service</h2>
+  <p>Serving homes and businesses with safe and effective pest control solutions.</p>
+</section>
+
 <footer>
   <p>© 2026 Shyam Pest Control</p>
 </footer>
@@ -48,117 +55,48 @@
 
     <input type="text" id="name" placeholder="Your Name">
     <input type="tel" id="mobile" placeholder="Mobile Number">
+
+    <select id="area">
+      <option value="">Select Area</option>
+      <option>Kitchen</option>
+      <option>Bedroom</option>
+      <option>Hall</option>
+    </select>
+
+    <select id="bhk">
+      <option value="">Select House Size</option>
+      <option>1 BHK</option>
+      <option>2 BHK</option>
+      <option>3 BHK</option>
+    </select>
+
     <input type="datetime-local" id="datetime">
     <input type="text" id="location" placeholder="Paste Google Maps Location Link">
 
-    <button onclick="sendWhatsApp()">Submit</button>
-    <button class="close" onclick="closePopup()">Close</button>
+    <button type="button" onclick="getLocation()">Use My Current Location</button>
+    <button type="button" onclick="sendWhatsApp()">Submit</button>
+    <button type="button" class="close" onclick="closePopup()">Close</button>
   </div>
 </div>
+
+<!-- CONFIRMATION POPUP -->
+<div class="popup" id="confirmPopup">
+  <div class="popup-box">
+    <h3>✅ Booking Confirmed</h3>
+    <p>Thank you! Your booking request has been received.</p>
+    <p>Our team will contact you shortly.</p>
+  </div>
+</div>
+
+
+<a href="https://wa.me/917208139984"
+   class="whatsapp-float"
+   target="_blank">
+  WhatsApp
+</a>
+
 
 <script src="script.js"></script>
 </body>
 </html>
 =======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Shyam Pest Control | Pest Control Services</title>
-  <meta name="description" content="Shyam Pest Control provides safe and reliable pest control services. Book a visit and get instant WhatsApp confirmation.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #2e7d32; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    button { background: #2e7d32; color: white; padding: 12px 20px; border: none; cursor: pointer; }
-    button:hover { background: #1b5e20; }
-
-    /* Popup */
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-    .popup-content {
-      background: white;
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin: 8px 0;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Shyam Pest Control</h1>
-  <p>Safe & Reliable Pest Control Services</p>
-  <button onclick="openPopup()">Book a Visit</button>
-</header>
-
-<section>
-  <h2>Pest Control Services</h2>
-  <p>We provide termite, cockroach, mosquito, rodent and general pest control services.</p>
-  <p>Service available in your local area.</p>
-</section>
-
-<!-- Popup -->
-<div class="popup" id="popup">
-  <div class="popup-content">
-    <h3>Book a Visit</h3>
-
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="tel" id="mobile" placeholder="Mobile Number" required>
-    <input type="datetime-local" id="datetime" required>
-    <textarea id="location" placeholder="Paste Google Maps Location Link"></textarea>
-
-    <button onclick="sendWhatsApp()">Submit</button>
-    <button onclick="closePopup()">Close</button>
-  </div>
-</div>
-
-<script>
-  function openPopup() {
-    document.getElementById("popup").style.display = "block";
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-
-  function sendWhatsApp() {
-    var name = document.getElementById("name").value;
-    var mobile = document.getElementById("mobile").value;
-    var datetime = document.getElementById("datetime").value;
-    var location = document.getElementById("location").value;
-
-    if (!name || !mobile || !datetime || !location) {
-      alert("Please fill all details");
-      return;
-    }
-
-    var adminNumber = "7208139984"; // <-- ADMIN WHATSAPP NUMBER
-    var message =
-      "New Booking - Shyam Pest Control%0A%0A" +
-      "Name: " + name + "%0A" +
-      "Mobile: " + mobile + "%0A" +
-      "Date & Time: " + datetime + "%0A" +
-      "Location: " + location;
-
-    var url = "https://wa.me/" + adminNumber + "?text=" + message;
-    window.open(url, "_blank");
-  }
-</script>
-
-</body>
-</html>
->>>>>>> 686d5b332bea4dca9423c0595b821b859f1a6d1b
