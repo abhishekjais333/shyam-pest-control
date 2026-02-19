@@ -29,7 +29,7 @@ function sendWhatsApp() {
   // Show confirmation popup
   document.getElementById("confirmPopup").style.display = "block";
 
-  let adminNumber = "917208139984"; // ADMIN NUMBER
+  let adminNumber = "919321221731"; // ADMIN NUMBER
 
   let message =
     `Booking Confirmed - Shyam Pest Control\n\n` +
